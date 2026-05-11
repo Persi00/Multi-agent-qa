@@ -103,4 +103,3 @@ Receives the original question, all subquestions, their extracted spans, and con
 - The application processes text **client-side until submission** — text is not stored or logged.
 - The system works best on factual, information-dense texts in English (articles, papers, reports, contracts).
 - Response quality degrades on very short texts or highly abstract/opinion-based questions where extractive evidence is sparse.
-- Sometimes there is an error with hugging face and you have to resend the question, to get the answer.
