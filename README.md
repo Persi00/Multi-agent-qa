@@ -65,7 +65,7 @@ The system uses four specialized agents arranged in a pipeline. Each agent has a
 Takes the raw input text and breaks it into atomic *content units* — discrete facts and claims. This gives downstream agents a structured view of the document rather than raw prose.
 
 **2. Question Generation Agent**
-Receives the content units and the user's question, then generates focused *subquestions* — each targeting a specific aspect of the original question that can be answered from a single content unit. This ensures coverage and higher chance of finding answer.
+Receives the content units and the user's question, then generates focused *subquestions* — each targeting a specific aspect of the original question that can be answered from a single content unit. This ensures coverage and higher chance of finding the answer.
 
 **3. Data Extraction Agent** *(runs asynchronously)*
 For each subquestion, extracts the most relevant *span* directly from the source text along with a confidence *score*. This agent is **extractive, not abstractive** — it returns verbatim passages rather than generated text, which substantially reduces hallucinations. All subquestion extractions run in parallel to minimize latency.
