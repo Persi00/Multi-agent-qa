@@ -83,7 +83,7 @@ Receives the original question, all subquestions, their extracted spans, and con
 | AI models | HuggingFace Inference API |
 | Hosting | Google Cloud Run |
 | Containerization | Docker |
-| CI/CD | GitHub Actions → Google Cloud Build |
+| CI/CD | GitHub → Google Cloud Build |
 | Frontend | HTML, CSS, JavaScript |
 
 ### Key design decisions
